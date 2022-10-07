@@ -6,18 +6,24 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Colmar Academy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100&family=Poppins:wght@100;200;400&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./resources/css/style.css" type="text/css" />
 </head>
 
 <body>
   <header>
-    <img src="./resources/images/ic-logo.svg" alt="logo" />
-    <h1 class="heading">
-      <span class="color-1">COLMAR</span>
-      <span class="color-2">ACADEMY</span>
-    </h1>
-    <nav class="navbar">
-      <ul>
+    <div class="logo">
+      <img src="./resources/images/ic-logo.svg" alt="logo" />
+      <h1 class="heading">
+        <span class="color-1">COLMAR</span>
+        <span class="color-2">ACADEMY</span>
+      </h1>
+    </div>
+    <nav>
+      <ul class="navbar">
         <li><a href="#">On campus</a></li>
         <li><a href="#">Online</a></li>
         <li><a href="#">For companies</a></li>
@@ -25,26 +31,32 @@
       </ul>
     </nav>
   </header>
+
   <section class="banner">
-    <div class="banner-image"></div>
-    <h2>Learn something new everyday</h2>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, eos?
-    </p>
-    <div class="button"></div>
-  </section>
-  <section class="information">
     <div class="container">
-      <div class="image"></div>
+      <img src="./resources/images/banner.jpg" alt="study group"/>
+      <div>
+        <div class="cta">
+          <h2>Learn something new everyday</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, facere.</p>
+          <div class="button"><span>Start here</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="information">
+    <div class="container" id="info-main">
+      <img src="./resources/images/information-main.jpg" alt="man studying in park"/>
       <h2>It doesn't hurt to keep practicing</h2>
-      <p class="article">
+      <p>
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
         fugit molestias eos provident a hic? Officia perferendis aspernatur
         excepturi earum."
       </p>
-      <p class="article-credit">Emanuel, Sr Strategist at Hiring.com</p>
+      <p class="credit">Emanuel, Sr Strategist at Hiring.com</p>
     </div>
-    <div class="container">
+    <div class="container" id="info-cards">
       <div>
         <img src="./resources/images/information-orientation.jpg" />
         <h3>Orientation date</h3>
@@ -113,7 +125,8 @@
     <div>
       <video src="./resources/videos/thesis.mp4" autoplay muted loop></video>
       <h3>Reimagine urban</h3>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur animi repellat rerum, explicabo libero mollitia exercitationem odio quia nulla minima modi porro quos nisi. Doloribus.</p> 
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur animi repellat rerum, explicabo libero
+        mollitia exercitationem odio quia nulla minima modi porro quos nisi. Doloribus.</p>
     </div>
     <div class="container">
       <div class="card">
