@@ -12,33 +12,35 @@
   box-sizing: border-box;
 }
 
-
 /* stylesheet */
 
 body {
   font-size: 16px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 h1 {
-    font-size: 1.25rem;
-    font-weight: 200;
+  font-size: 1.25rem;
+  font-weight: 200;
 }
 
 h2 {
-    font-size: 1.5rem;
-    font-weight: 400;
+  font-size: 1.75rem;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 1.25rem;
 }
 
 p {
-    font-family: 'M PLUS 1p', sans-serif;
-    font-size: .75rem;
+  font-family: "M PLUS 1p", sans-serif;
+  font-size: 0.75rem;
 }
 
 .container {
-    display: flex;
+  display: flex;
 }
-
 
 /* header */
 
@@ -54,19 +56,19 @@ header {
 }
 
 .logo {
-    display: flex;
-    height: 2rem;
-    margin-left: 1.5rem;
+  display: flex;
+  height: 2rem;
+  margin-left: 1.5rem;
 }
 
 .heading .color-1 {
-    color: black;
+  color: black;
 }
 
 .heading .color-2 {
-    color: gray;
-    position: relative;
-    left: -.3rem;
+  color: gray;
+  position: relative;
+  left: -0.3rem;
 }
 
 nav {
@@ -94,9 +96,8 @@ nav {
 }
 
 .navbar li a:hover {
-    color: lightgray;
+  color: lightgray;
 }
-
 
 /* banner section */
 
@@ -108,58 +109,95 @@ nav {
 }
 
 .banner .container {
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
+  align-items: center;
+  width: 100%;
 }
 
 .banner .container img {
-    padding: 2rem 1.5rem;
-    width: 60%;
+  padding: 2rem 1.5rem;
+  width: 60%;
 }
 
-.cta {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+.banner .container div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 40%;
+  margin-right: 5rem;
 }
 
-.button {
-    background-color: black;
-    color: white;
-    width: 100%;
-    text-align: center;
-    padding: .5rem;
+.banner .container div .cta {
+  width: 100%;
 }
 
+.banner .container div .cta .button {
+  background-color: black;
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: .25rem;
+}
 
 /* information section */
 
 .information {
-    width: 100%;
-    display: flex;
+  width: 100%;
+  display: flex;
 }
 
 #info-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 2rem 1.5rem;
-    width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem 1.5rem;
+  width: 60%;
 }
 
+.info-main img {
+  width: 100%;
+}
+
+.info-main .credit {
+  font-family: "Poppins", sans-serif;
+}
 
 #info-cards {
-    flex-direction: column;
-    width: 40%;
+  flex-direction: column;
+  width: 40%;
+}
+
+.card {
+  display: flex;
+  border: 1px solid lightgray;
+}
+
+.card img {
+  width: 35%;
+  margin: 1rem;
+}
+
+.card div {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: .5rem;
+}
+
+.card div a {
+  text-decoration: none;
+  color: cornflowerblue;
+  font-family: "M PLUS 1p", sans-serif;
+  font-size: 0.75rem;
 }
 
 /* courses section */
 
+.courses {
+  background-color: lightgrey;
+}
 
 /* thesis section */
-
 
 /* footer */
