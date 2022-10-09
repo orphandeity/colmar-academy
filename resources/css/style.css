@@ -136,7 +136,7 @@ nav {
   width: 100%;
   text-align: center;
   padding: 0.5rem;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
 }
 
 /* information section */
@@ -182,7 +182,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: .5rem;
+  gap: 0.5rem;
 }
 
 .card div a {
@@ -196,6 +196,24 @@ nav {
 
 .courses {
   background-color: lightgrey;
+}
+
+.courses h2 {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+#courses-container {
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 2rem 4.5rem;
+}
+
+.courses .container .card {
+  display: flex;
+  flex: 1 1 25%;
+  flex-direction: column;
+  background-color: white;
 }
 
 /* thesis section */
