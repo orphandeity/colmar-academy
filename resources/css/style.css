@@ -42,6 +42,11 @@ p {
   display: flex;
 }
 
+.card {
+  display: flex;
+  background-color: white;
+}
+
 /* header */
 
 header {
@@ -163,13 +168,15 @@ nav {
 }
 
 #info-cards {
-  flex-direction: column;
   width: 40%;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: .1rem;
+  background-color: lightgray;
 }
 
-.card {
-  display: flex;
-  border: 1px solid lightgray;
+#info-cards > .card {
+  margin-left: .1rem;
 }
 
 .card img {
@@ -227,4 +234,56 @@ nav {
 
 /* thesis section */
 
+.thesis > h2 {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.thesis-container {
+  display: flex;
+  padding: 2rem 0;
+}
+
+.video-card {
+  flex-basis: 60%;
+  padding: 0 1.5rem;
+}
+
+.thesis-video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.thesis-cards {
+  flex-basis: 40%;
+}
+
+#thesis-1 {
+  background-color: lightgray;
+}
+
 /* footer */
+
+footer {
+  border-top: 1px solid lightgray;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer > p {
+  margin: 1rem 1.5rem
+}
+
+footer > ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 1.5rem;
+}
+
+footer > ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: .6rem;
+}
